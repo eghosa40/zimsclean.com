@@ -135,4 +135,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Hide v0 credit badge */
+a[href*="v0.dev"], .v0-badge, [data-v0-badge] {
+  display: none !important;
+}
+
 }
