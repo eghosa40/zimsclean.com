@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens to match Zims Cleaning Services brand guidelines */
+  --background: #f8fafc; /* Light grey background */
+  --foreground: #111827; /* Near-black heading text */
+  --card: #f1f5f9; /* Very subtle light grey section background */
+  --card-foreground: #374151; /* Body text color */
+  --popover: #f8fafc;
+  --popover-foreground: #374151;
+  /* Updated primary blue to match logo color */
+  --primary: #2563eb; /* Logo blue color */
+  --primary-foreground: #ffffff;
+  /* Updated secondary to be a lighter shade of the logo blue */
+  --secondary: #3b82f6; /* Lighter shade for hovers */
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #374151;
+  --accent: #ffc107; /* Accent yellow */
+  --accent-foreground: #111827;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb; /* Borders */
+  --input: #ffffff;
+  /* Updated ring color to match logo blue */
+  --ring: #2563eb;
+  /* Updated chart colors to use logo blue */
+  --chart-1: #2563eb;
+  --chart-2: #ffc107;
+  --chart-3: #111827;
+  --chart-4: #374151;
+  --chart-5: #f1f5f9;
+  --radius: 0.75rem;
+  --sidebar: #f8fafc;
+  --sidebar-foreground: #374151;
+  /* Updated sidebar primary to match logo blue */
+  --sidebar-primary: #2563eb;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ffc107;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #e5e7eb;
+  /* Updated sidebar ring to match logo blue */
+  --sidebar-ring: #2563eb;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+  /* Updated dark mode primary to match logo blue */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  /* Updated dark mode secondary to lighter logo blue */
+  --secondary: #3b82f6;
+  --secondary-foreground: #ffffff;
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --accent: #ffc107;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #334155;
+  --input: #1e293b;
+  /* Updated dark mode ring to match logo blue */
+  --ring: #2563eb;
+  /* Updated dark mode chart colors */
+  --chart-1: #2563eb;
+  --chart-2: #ffc107;
+  --chart-3: #f8fafc;
+  --chart-4: #94a3b8;
+  --chart-5: #334155;
+  --sidebar: #1e293b;
+  --sidebar-foreground: #f8fafc;
+  /* Updated dark mode sidebar primary to match logo blue */
+  --sidebar-primary: #2563eb;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #334155;
+  /* Updated dark mode sidebar ring to match logo blue */
+  --sidebar-ring: #2563eb;
+}
+
+@theme inline {
+  /* Updated to use Inter font */
+  --font-sans: var(--font-inter);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
