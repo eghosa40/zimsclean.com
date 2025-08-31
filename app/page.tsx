@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card"
 import { MessageCircle, Mail, Shield, Clock, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
+import HideV0Badge from "@/components/HideV0Badge"
 
 export default function ComingSoonPage() {
   const currentYear = new Date().getFullYear()
@@ -45,6 +46,8 @@ export default function ComingSoonPage() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <HideV0Badge />
+
       <header className="py-8 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center mb-2">
