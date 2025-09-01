@@ -4,39 +4,45 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens for luxury Apple-like design */
+  /* Updated color tokens to match Zims Cleaning Services brand guidelines */
   --background: #f8fafc; /* Light grey background */
-  --foreground: #0f172a; /* Dark slate heading text */
-  --card: #ffffff; /* Pure white cards */
-  --card-foreground: #0f172a; /* Dark slate card text */
-  --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  --primary: #2563eb; /* Primary blue */
+  --foreground: #111827; /* Near-black heading text */
+  --card: #f1f5f9; /* Very subtle light grey section background */
+  --card-foreground: #374151; /* Body text color */
+  --popover: #f8fafc;
+  --popover-foreground: #374151;
+  /* Updated primary blue to match logo color */
+  --primary: #2563eb; /* Logo blue color */
   --primary-foreground: #ffffff;
-  --secondary: #f1f5f9; /* Light secondary */
-  --secondary-foreground: #0f172a;
+  /* Updated secondary to be a lighter shade of the logo blue */
+  --secondary: #3b82f6; /* Lighter shade for hovers */
+  --secondary-foreground: #ffffff;
   --muted: #f1f5f9;
-  --muted-foreground: #64748b; /* Muted text */
+  --muted-foreground: #374151;
   --accent: #ffc107; /* Accent yellow */
-  --accent-foreground: #0f172a;
+  --accent-foreground: #111827;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #e5e7eb; /* Light borders */
+  --border: #e5e7eb; /* Borders */
   --input: #ffffff;
+  /* Updated ring color to match logo blue */
   --ring: #2563eb;
+  /* Updated chart colors to use logo blue */
   --chart-1: #2563eb;
   --chart-2: #ffc107;
-  --chart-3: #0f172a;
-  --chart-4: #64748b;
+  --chart-3: #111827;
+  --chart-4: #374151;
   --chart-5: #f1f5f9;
-  --radius: 0.875rem; /* 14px radius */
+  --radius: 0.75rem;
   --sidebar: #f8fafc;
-  --sidebar-foreground: #64748b;
+  --sidebar-foreground: #374151;
+  /* Updated sidebar primary to match logo blue */
   --sidebar-primary: #2563eb;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #ffc107;
-  --sidebar-accent-foreground: #0f172a;
+  --sidebar-accent-foreground: #111827;
   --sidebar-border: #e5e7eb;
+  /* Updated sidebar ring to match logo blue */
   --sidebar-ring: #2563eb;
 }
 
@@ -130,9 +136,8 @@
     @apply bg-background text-foreground;
   }
   /* Hide v0 credit badge */
-  a[href*="v0.dev"],
-  .v0-badge,
-  [data-v0-badge] {
-    display: none !important;
-  }
+a[href*="v0.dev"], .v0-badge, [data-v0-badge] {
+  display: none !important;
+}
+
 }
