@@ -77,7 +77,8 @@ export default function ComingSoonPage() {
 
             <div className="space-y-8">
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
-                Professional Cleaning Services – Website Coming Soon
+                Professional Cleaning Services –{" "}
+                <span className="text-blue-600 text-4xl md:text-5xl">Website Coming Soon</span>
               </h1>
 
               <p className="text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto">
