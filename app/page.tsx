@@ -52,8 +52,8 @@ export default function ComingSoonPage() {
         {/* Hero Background */}
         <div className="absolute inset-0">
           <Image
-            src="/images/kitchen-cleaning.jpg"
-            alt="Professional kitchen cleaning services"
+            src="/images/mirror-cleaning-hero.jpg"
+            alt="Professional mirror and bathroom cleaning services"
             fill
             className="object-cover"
             priority
@@ -70,7 +70,7 @@ export default function ComingSoonPage() {
                 alt="Zims Cleaning Services Ltd Logo"
                 width={320}
                 height={128}
-                className="h-auto max-w-[320px]"
+                className="h-auto max-w-[320px] mix-blend-multiply filter drop-shadow-sm"
                 priority
               />
             </div>
