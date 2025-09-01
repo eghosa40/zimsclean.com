@@ -84,7 +84,7 @@ export default function ComingSoonPage() {
                 <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
                   Professional Cleaning Services
                 </h2>
-                <div className="text-lg md:text-xl font-bold text-primary">Website Coming Soon</div>
+                <div className="text-lg md:text-xl font-bold text-black">Website Coming Soon</div>
               </div>
 
               <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -95,7 +95,7 @@ export default function ComingSoonPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-secondary text-primary-foreground px-8 py-6 text-lg font-bold min-w-[200px] rounded-xl"
+                className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-lg font-bold min-w-[200px] rounded-xl"
                 onClick={() => window.open("https://wa.me/447886670530", "_blank")}
                 aria-label="Contact us via WhatsApp"
               >
@@ -117,22 +117,22 @@ export default function ComingSoonPage() {
             <Card className="bg-white/95 backdrop-blur-sm border-white/20 p-8 max-w-3xl mx-auto rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Shield className="h-6 w-6 text-primary" />
+                  <div className="bg-black/10 p-3 rounded-full">
+                    <Shield className="h-6 w-6 text-black" />
                   </div>
                   <span className="font-semibold text-foreground">Licensed & Insured</span>
                 </div>
 
                 <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <CheckCircle className="h-6 w-6 text-primary" />
+                  <div className="bg-black/10 p-3 rounded-full">
+                    <CheckCircle className="h-6 w-6 text-black" />
                   </div>
                   <span className="font-semibold text-foreground">DBS-Checked Staff</span>
                 </div>
 
                 <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Clock className="h-6 w-6 text-primary" />
+                  <div className="bg-black/10 p-3 rounded-full">
+                    <Clock className="h-6 w-6 text-black" />
                   </div>
                   <span className="font-semibold text-foreground">On-Time, Every Time</span>
                 </div>
@@ -161,14 +161,14 @@ export default function ComingSoonPage() {
                   required
                   placeholder="Enter your email to get notified"
                   autoComplete="email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-white/30 focus:outline-none focus:ring-2 focus:ring-primary text-black bg-white/95 backdrop-blur-sm"
+                  className="flex-1 px-4 py-3 rounded-lg border border-white/30 focus:outline-none focus:ring-2 focus:ring-black text-black bg-white/95 backdrop-blur-sm"
                   aria-label="Email address"
                   disabled={status === "loading" || status === "success"}
                 />
                 <Button
                   type="submit"
                   size="lg"
-                  className="bg-primary hover:bg-secondary text-primary-foreground font-bold px-6 py-3 rounded-lg"
+                  className="bg-black hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-lg"
                   disabled={status === "loading" || status === "success"}
                 >
                   {status === "loading" ? "Sending..." : status === "success" ? "All Set ✅" : "Notify Me"}
