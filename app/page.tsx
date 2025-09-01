@@ -52,7 +52,7 @@ export default function ComingSoonPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center mb-2">
             <Image
-              src="/images/zims-logo.png"
+              src="/images/zims-logo-transparent.png"
               alt="Zims Cleaning Services Ltd Logo"
               width={300}
               height={120}
