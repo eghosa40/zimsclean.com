@@ -1,0 +1,11 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* optional: your custom CSS */
+html, body {
+    height: 100%;
+}
+body {
+    background: #F8FAFC;
+    color: #0F172A;
+}
