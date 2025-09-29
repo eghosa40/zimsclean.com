@@ -1,0 +1,1 @@
+export const isManchesterPostcode = (text: string) => /^M\d/i.test(text.trim());
