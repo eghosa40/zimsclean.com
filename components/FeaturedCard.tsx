@@ -1,8 +1,9 @@
-export default function FeatureCard({ title, desc }:{title:string; desc:string;}) {
+type Props = { title: string; desc: string };
+export default function FeatureCard({ title, desc }: Props) {
     return (
-        <div className="rounded-2xl border bg-white p-6 shadow-sm">
+        <div className="card p-6">
             <h3 className="text-base font-semibold">{title}</h3>
-            <p className="mt-2 text-sm text-gray-600">{desc}</p>
+            <p className="mt-2 text-sm leading-6 text-[var(--ink-600)]">{desc}</p>
         </div>
     );
 }
