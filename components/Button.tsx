@@ -4,15 +4,24 @@ import Link from "next/link";
 type Props = {
     href?: string;
     children: ReactNode;
-    variant?: "primary" | "ghost" | "accent";
+    variant?: "primary" | "accent" | "ghost";
     size?: "md" | "lg";
 };
 
 const base =
-    "inline-flex items-center justify-center rounded-xl font-medium transition-colors focus:outline-none focus-visible:ring-2";
-const sizes = { md: "px-5 py-2.5 text-sm", lg: "px-6 py-3 text-base" };
+    "inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus-visible:ring-2";
 
-export default function Button({ href, children, variant = "primary", size = "md" }: Props) {
+const sizes = {
+    md: "px-5 py-2.5 text-sm",
+    lg: "px-6 py-3 text-base",
+};
+
+export default function Button({
+                                   href,
+                                   children,
+                                   variant = "primary",
+                                   size = "md",
+                               }: Props) {
     const cls =
         variant === "primary"
             ? `${base} ${sizes[size]} text-white bg-[var(--brand-blue)] hover:bg-[#0858d8] focus-visible:ring-[var(--brand-blue)]`
@@ -22,11 +31,14 @@ export default function Button({ href, children, variant = "primary", size = "md
 
     if (!href) return <button className={cls}>{children}</button>;
 
-    // Internal routes → Next Link; external (http/https) → <a>
     const isInternal = href.startsWith("/") && !href.startsWith("//");
     return isInternal ? (
-        <Link href={href} className={cls}>{children}</Link>
+        <Link href={href} className={cls}>
+            {children}
+        </Link>
     ) : (
-        <a className={cls} href={href}>{children}</a>
+        <a href={href} className={cls}>
+            {children}
+        </a>
     );
 }

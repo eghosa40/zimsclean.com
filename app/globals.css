@@ -1,35 +1,36 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
-/* ---- Brand tokens ---- */
+/* ---- Base / tokens ---- */
 :root {
-    --brand-blue: #0a68ff;    /* bold, clean */
-    --brand-yellow: #ffc21a;  /* warm accent */
-    --ink-900: #0f172a;       /* slate-900 */
-    --ink-600: #475569;       /* slate-600 */
-    --surface: #ffffff;
-    --canvas: #f8fafc;        /* slate-50 */
+    --ink-900: #0f172a;
+    --ink-700: #334155;
+    --ink-600: #475569;
     --line: rgba(15, 23, 42, .08);
+    --blue: #0a68ff;
+    --blue-600: #0858d8;
 }
 
 html, body { height: 100%; }
 body {
-    background: var(--canvas);
+    background: #fff;
     color: var(--ink-900);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* thin Tesla-like separators */
-.hr {
-    height: 1px;
-    background: var(--line);
-}
+/* Apple-y: links inherit color, no underlines by default */
+a { text-decoration: none; color: inherit; }
+a:hover { text-decoration: none; }
 
-/* subtle card */
+/* Selection (so “blue blocks” don’t look like buttons) */
+::selection { background: rgba(10,104,255,.18); color: inherit; }
+
+/* Subtle card + hairline divider helpers */
 .card {
-    background: var(--surface);
-    border: 1px solid rgba(15, 23, 42, .06);
+    background: #fff;
+    border: 1px solid rgba(15,23,42,.07);
     border-radius: 16px;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, .04);
+    box-shadow: 0 1px 2px rgba(15,23,42,.04);
 }
+.hr { height:1px; background: var(--line); }
